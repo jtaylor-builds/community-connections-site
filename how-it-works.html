@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>How It Works - Community Connections Support Services</title>
+  <meta name="description" content="Getting started is simple: reach out, have a friendly conversation, plan together and stay connected with Community Connections Support Services." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="How It Works - Community Connections Support Services">
+  <meta property="og:description" content="Getting started is simple: reach out, have a friendly conversation, plan together and stay connected with Community Connections Support Services.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet (all styling for this page lives in here) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html" class="active" aria-current="page">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER =================
+         Photo file: how-it-works-hero.jpg (same folder as this page) -->
+    <section class="hero how-hero">
+      <div class="hero-content">
+        <h1 class="script-title">How It Works</h1>
+        <p class="hero-subtext">Simple steps. Real support.</p>
+      </div>
+    </section>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <section class="how-main-section">
+      <div class="how-container">
+
+        <!-- 4-step grid (to change a step, edit the text inside its "step-card" block) -->
+        <div class="how-steps-grid">
+
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-badge">1</div>
+            <div class="step-icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i></div>
+            <h3>Reach Out</h3>
+            <p>Contact us by phone or email to let us know how we can help.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-badge">2</div>
+            <div class="step-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></div>
+            <h3>Let's Talk</h3>
+            <p>We'll have a friendly conversation to learn about your needs, goals and preferences.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-badge">3</div>
+            <div class="step-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div>
+            <h3>Plan Together</h3>
+            <p>We'll create a personalized support plan that fits your life and goals.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-badge">4</div>
+            <div class="step-icon"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></div>
+            <h3>Stay Connected</h3>
+            <p>We'll provide ongoing support and check-ins to make sure you're always on track.</p>
+          </div>
+
+        </div>
+
+        <!-- Cursive tagline -->
+        <h2 class="how-bottom-tagline">Your goals. Our support. A stronger tomorrow.</h2>
+
+        <!-- Ready for step 1? -->
+        <p class="how-cta">
+          <a href="contact.html" class="btn-primary"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Get in Touch</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

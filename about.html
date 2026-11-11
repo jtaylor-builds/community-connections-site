@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>About Wesley - Community Connections Support Services</title>
+  <meta name="description" content="Meet Wesley, founder of Community Connections Support Services and a Certified Personal Support Worker dedicated to helping individuals and families feel connected." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="About Wesley - Community Connections Support Services">
+  <meta property="og:description" content="Meet Wesley, founder of Community Connections Support Services and a Certified Personal Support Worker dedicated to helping individuals and families feel connected.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= ABOUT HERO SECTION =================
+         THE PHOTO: save Wesley's photo as "about-hero.jpg" in the same folder as this page
+         and it appears automatically on the right side of this banner (the left side fades
+         to navy behind the text). Best shape: wide/landscape, about 1920 x 700 pixels,
+         with Wesley placed in the RIGHT third of the picture. Until then, a soft green
+         glow fills the space. -->
+    <section class="hero about-hero">
+      <div class="hero-content">
+        <h1 class="script-title">About Wesley</h1>
+        <p class="hero-subtitle-bold">Founder &amp; Certified Personal Support Worker</p>
+
+        <p class="hero-body-text">
+          With a genuine passion for helping others, Wesley founded Community Connections Support Services to make a real difference in people's lives. As a Certified Personal Support Worker, he brings experience, compassion and a hands-on approach to supporting individuals and families.
+        </p>
+
+        <p class="script-tagline">Real support. Stronger community.</p>
+      </div>
+    </section>
+
+    <!-- ================= THREE VALUE CARDS SECTION ================= -->
+    <section class="about-cards-section">
+      <div class="container">
+        <div class="about-cards-grid">
+
+          <!-- Card 1 -->
+          <div class="about-feature-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+            </div>
+            <h3>Certified<br>Personal Support Worker</h3>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="about-feature-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            </div>
+            <h3>Compassionate<br>Care</h3>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="about-feature-card">
+            <div class="card-icon">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <h3>Support You<br>Can Trust</h3>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

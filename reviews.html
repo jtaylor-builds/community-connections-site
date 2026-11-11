@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Client Feedback - Community Connections Support Services</title>
+  <meta name="description" content="Read what clients and families say about Community Connections Support Services, or share your own experience." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Client Feedback - Community Connections Support Services">
+  <meta property="og:description" content="Read what clients and families say about Community Connections Support Services, or share your own experience.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet (all styling for this page lives in here) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+  <style>
+    /* "Show more reviews" button */
+    .review-card[hidden] { display: none; }
+    .show-more-wrap { text-align: center; margin-top: 26px; }
+    .show-more-btn {
+      background: var(--green, #36743e); color: #fff; border: 0; border-radius: 30px;
+      padding: 13px 28px; min-height: 44px; font: inherit; font-weight: 600; cursor: pointer;
+    }
+    .show-more-btn:hover { background: var(--green-dark, #2b5d32); }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html" class="active" aria-current="page">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER =================
+         Photo file: reviews-hero.jpg (same folder as this page) -->
+    <section class="hero reviews-hero">
+      <div class="hero-content">
+        <h1 class="script-title">Client Feedback</h1>
+        <p class="hero-subtext">Real stories. Genuine appreciation.</p>
+      </div>
+    </section>
+
+    <!-- ================= REVIEWS + FORM ================= -->
+    <section class="reviews-container">
+      <div class="reviews-split-wrapper">
+
+        <!-- LEFT: published reviews -->
+        <div class="reviews-grid-2x2" id="reviews-grid" aria-live="polite">
+
+          <!-- ======== SAMPLE REVIEWS - DELETE BEFORE THE SITE GOES LIVE ========
+               These four cards are placeholders so you can see the design.
+               Delete everything from here down to the "END OF SAMPLE REVIEWS" line.
+               Real reviews then load automatically from the approved list (see the
+               script at the bottom of this page). Until there are some, visitors
+               see a friendly "be the first" message. -->
+          <article class="review-card is-sample">
+            <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+            <p class="review-text">Wesley has been amazing! His support, kindness and reliability have made a huge difference in our lives.</p>
+            <div class="review-author"><strong>Sarah L.</strong><span>Client</span></div>
+          </article>
+
+          <article class="review-card is-sample">
+            <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+            <p class="review-text">I always feel safe, respected and heard. He truly goes above and beyond.</p>
+            <div class="review-author"><strong>Mike T.</strong><span>Client</span></div>
+          </article>
+
+          <article class="review-card is-sample">
+            <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+            <p class="review-text">The support I receive has given me more confidence and independence. I couldn't ask for a better person!</p>
+            <div class="review-author"><strong>Linda P.</strong><span>Client</span></div>
+          </article>
+
+          <article class="review-card is-sample">
+            <i class="fa-solid fa-quote-left quote-icon" aria-hidden="true"></i>
+            <p class="review-text">Reliable, compassionate, and always punctual. Having this care gives our whole family peace of mind.</p>
+            <div class="review-author"><strong>David M.</strong><span>Family Member</span></div>
+          </article>
+          <!-- ======== END OF SAMPLE REVIEWS ======== -->
+
+        </div>
+
+        <!-- RIGHT: review form -->
+        <div class="review-form-card" id="leave-review">
+          <h2>Leave a Review</h2>
+          <p class="form-subtext">We value your feedback and experience with us.</p>
+
+          <form class="review-form" id="review-form" novalidate>
+            <div class="form-group">
+              <label for="r-name">Your Name</label>
+              <input type="text" id="r-name" name="name" placeholder="e.g. Sarah L." maxlength="60" autocomplete="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="r-role">I am a...</label>
+              <select id="r-role" name="role" required>
+                <option value="Client">Client</option>
+                <option value="Family Member">Family Member</option>
+                <option value="Community Member">Community Member</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="r-review">Your Review</label>
+              <textarea id="r-review" name="review" rows="4" maxlength="800" placeholder="Share your experience..." required></textarea>
+            </div>
+
+            <!-- Hidden trap for spam robots (people never see or fill this) -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="r-website">Leave this empty</label>
+              <input type="text" id="r-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="consent-row">
+              <input type="checkbox" id="r-consent" required>
+              <span>I'm happy for my review to be shown on this website (first name and last initial only).</span>
+            </label>
+
+            <p class="form-note">Every review is read before it's posted. Please don't include private health details.</p>
+
+            <button type="submit" class="submit-btn" id="review-submit">Submit Review</button>
+            <p class="form-status" id="review-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="thank-you-banner">
+        <h2 class="script-thank-you">Thank you for trusting us!</h2>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* =====================================================================
+       REVIEWS SETUP - three links to fill in (all are explained in the
+       step-by-step guide). Leave them blank and the page still works:
+       the form will say it isn't connected yet, and the sample cards stay.
+       ===================================================================== */
+
+    // 1) The "formResponse" web address of your Google Form
+    //    (looks like https://docs.google.com/forms/d/e/LONG-ID/formResponse)
+    var GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdDmq4kfwEV9-HEHZzwar6KAnEPNY8NuSdZUqPNl3LH4zl9Ww/formResponse';
+
+    // 2) The question codes of that Google Form (each looks like entry.123456789)
+    var FORM_FIELDS = {
+      name:    'entry.2060228822',
+      role:    'entry.616050914',
+      review:  'entry.1075160520',
+      consent: 'entry.456775596'
+    };
+
+    // 3) The CSV link of the "Published" tab (the approved reviews only)
+    var REVIEWS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS0uK74t0qYhKYrnQFtolVY5n33FXvzDnOxoNxFLX0d2scUCbK5Z1RKfKk2vjvVjyhbquVVfGkLDKb8/pub?gid=233261804&single=true&output=csv';
+
+    /* ---------------- you shouldn't need to change anything below ---------------- */
+
+    var grid = document.getElementById('reviews-grid');
+
+    function showEmptyMessage() {
+      grid.innerHTML = '';
+      var p = document.createElement('p');
+      p.className = 'reviews-empty';
+      p.textContent = 'Be the first to share your experience — we’d love to hear from you. Use the form to leave a review.';
+      grid.appendChild(p);
+    }
+
+    // Small CSV reader (handles commas and line breaks inside quotes)
+    function parseCSV(text) {
+      var rows = [], row = [], field = '', quoted = false;
+      for (var i = 0; i < text.length; i++) {
+        var c = text[i];
+        if (quoted) {
+          if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else { quoted = false; } }
+          else { field += c; }
+        } else if (c === '"') { quoted = true; }
+        else if (c === ',') { row.push(field); field = ''; }
+        else if (c === '\n' || c === '\r') {
+          if (c === '\r' && text[i + 1] === '\n') i++;
+          row.push(field); rows.push(row); row = []; field = '';
+        } else { field += c; }
+      }
+      if (field !== '' || row.length) { row.push(field); rows.push(row); }
+      return rows;
+    }
+
+    function makeCard(name, role, review) {
+      var card = document.createElement('article');
+      card.className = 'review-card';
+
+      var icon = document.createElement('i');
+      icon.className = 'fa-solid fa-quote-left quote-icon';
+      icon.setAttribute('aria-hidden', 'true');
+
+      var text = document.createElement('p');
+      text.className = 'review-text';
+      text.textContent = review;            // textContent keeps anything typed harmless
+
+      var author = document.createElement('div');
+      author.className = 'review-author';
+      var strong = document.createElement('strong');
+      strong.textContent = name;
+      var span = document.createElement('span');
+      span.textContent = role;
+      author.appendChild(strong);
+      author.appendChild(span);
+
+      card.appendChild(icon);
+      card.appendChild(text);
+      card.appendChild(author);
+      return card;
+    }
+
+    // Show the newest reviews first, with a "Show more reviews" button for the rest
+    var REVIEWS_PER_PAGE = 6;             // change this number to show more or fewer at a time
+    function setUpShowMore() {
+      var cards = grid.querySelectorAll('.review-card');
+      if (cards.length <= REVIEWS_PER_PAGE) return;
+      for (var i = REVIEWS_PER_PAGE; i < cards.length; i++) cards[i].hidden = true;
+
+      var wrap = document.createElement('div');
+      wrap.className = 'show-more-wrap';
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'show-more-btn';
+      wrap.appendChild(btn);
+      grid.parentNode.insertBefore(wrap, grid.nextSibling);
+
+      function update() {
+        var hidden = grid.querySelectorAll('.review-card[hidden]').length;
+        if (!hidden) { wrap.remove(); return; }
+        btn.textContent = 'Show more reviews (' + hidden + ' more)';
+      }
+      btn.addEventListener('click', function () {
+        var hiddenCards = grid.querySelectorAll('.review-card[hidden]');
+        for (var j = 0; j < hiddenCards.length && j < REVIEWS_PER_PAGE; j++) hiddenCards[j].hidden = false;
+        update();
+      });
+      update();
+    }
+
+    function loadApprovedReviews() {
+      if (!REVIEWS_CSV_URL) {
+        if (!grid.querySelector('.review-card')) showEmptyMessage();
+        return;
+      }
+      fetch(REVIEWS_CSV_URL, { cache: 'no-store' })
+        .then(function (r) { if (!r.ok) throw new Error('Google answered with status ' + r.status); return r.text(); })
+        .then(function (csv) {
+          var rows = parseCSV(csv).slice(1);        // skip the header row
+          console.log('Reviews: loaded ' + rows.length + ' approved row(s) from the sheet.');
+          var cards = [];
+          rows.forEach(function (r) {
+            var name = (r[0] || '').trim(), role = (r[1] || '').trim(), review = (r[2] || '').trim();
+            if (name && review) cards.push(makeCard(name, role, review.slice(0, 800)));
+          });
+          if (!cards.length) { showEmptyMessage(); return; }
+          grid.innerHTML = '';
+          cards.reverse().forEach(function (c) { grid.appendChild(c); });   // newest first
+          setUpShowMore();
+        })
+        .catch(function (err) {
+          console.warn('Reviews: could not load the approved reviews. ', err);
+          if (!grid.querySelector('.review-card')) showEmptyMessage();
+        });
+    }
+    loadApprovedReviews();
+
+    // ----- Review form -----
+    var form = document.getElementById('review-form');
+    var statusEl = document.getElementById('review-status');
+    var submitBtn = document.getElementById('review-submit');
+
+    function setStatus(msg, ok) {
+      statusEl.textContent = msg;
+      statusEl.className = 'form-status ' + (ok ? 'ok' : 'error');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.name.value.trim() || !form.review.value.trim()) {
+        setStatus('Please add your name and your review.', false); return;
+      }
+      if (!document.getElementById('r-consent').checked) {
+        setStatus('Please tick the box so we know we may share your review.', false); return;
+      }
+      if (form.website.value) { form.reset(); return; }          // a robot filled the hidden trap: quietly stop
+
+      if (!GOOGLE_FORM_URL) {
+        setStatus('The review form isn’t connected yet. (Add your Google Form link in the script at the bottom of this page.)', false); return;
+      }
+
+      var data = new URLSearchParams();
+      data.append(FORM_FIELDS.name,    form.name.value.trim());
+      data.append(FORM_FIELDS.role,    form.role.value);
+      data.append(FORM_FIELDS.review,  form.review.value.trim());
+      data.append(FORM_FIELDS.consent, 'Yes');
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      fetch(GOOGLE_FORM_URL, { method: 'POST', mode: 'no-cors', body: data })
+        .then(function () {
+          form.reset();
+          setStatus('Thank you! Your review has been sent. It will appear once it has been approved.', true);
+        })
+        .catch(function () {
+          setStatus('Sorry, something went wrong. Please try again, or email us instead.', false);
+        })
+        .then(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Review';
+        });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Contact Us - Community Connections Support Services</title>
+  <meta name="description" content="Get in touch with Community Connections Support Services in Goderich and surrounding area. Call 519-955-3424, email us or send a message and we'll find the right support for you or your loved one." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Contact Us - Community Connections Support Services">
+  <meta property="og:description" content="Get in touch with Community Connections Support Services. Call 519-955-3424, email us or send a message and we'll find the right support for you or your loved one.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet (all styling for this page lives in here) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER =================
+         Photo file: contact-hero.jpg (same folder as this page) -->
+    <section class="hero contact-hero">
+      <div class="hero-content">
+        <h1 class="script-title">Get in Touch</h1>
+        <p class="hero-subtext">We're here to help you and your family. Reach out today.</p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT DETAILS + FORM ================= -->
+    <section class="contact-navy-section">
+      <div class="container">
+        <div class="contact-navy-grid">
+
+          <!-- Left: contact details -->
+          <div class="contact-navy-info">
+            <div class="section-title-line">
+              <h2>CONTACT US</h2>
+              <div class="green-line"></div>
+            </div>
+            <p>Have questions or need support? We'd love to hear from you. Reach out today and let's find the right support for you or your loved one.</p>
+
+            <ul class="navy-details-list">
+              <li>
+                <div class="navy-icon-circle"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                <a href="tel:5199553424">519-955-3424</a>
+              </li>
+              <li>
+                <div class="navy-icon-circle"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                <a href="mailto:communityconnections.on@gmail.com">communityconnections.on@gmail.com</a>
+              </li>
+              <li>
+                <div class="navy-icon-circle"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+                <span>www.communityconnectionssupportservices.ca</span>
+              </li>
+               <li>
+                <div class="navy-icon-circle"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+                <span>Serving Goderich and surrounding area</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right: message form -->
+          <div class="contact-white-form-card">
+            <h3>Send Us a Message</h3>
+
+            <!-- FORMSPREE: replace YOUR_FORM_ID with the code from your Formspree form
+                 (the action looks like https://formspree.io/f/abcdwxyz) -->
+            <form id="contact-form" action="https://formspree.io/f/mdeernrb" method="POST" novalidate>
+              <div class="form-row-double">
+                <div class="form-group">
+                  <label for="c-name" class="visually-hidden">Your name</label>
+                  <input type="text" id="c-name" name="name" required placeholder="Name *" autocomplete="name" maxlength="80">
+                </div>
+                <div class="form-group">
+                  <label for="c-email" class="visually-hidden">Your email</label>
+                  <input type="email" id="c-email" name="email" required placeholder="Email *" autocomplete="email" maxlength="120">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-phone" class="visually-hidden">Your phone number (optional)</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="Phone Number" autocomplete="tel" maxlength="30">
+              </div>
+
+              <div class="form-group">
+                <label for="c-message" class="visually-hidden">Your message</label>
+                <textarea id="c-message" name="message" rows="4" required placeholder="Your Message *" maxlength="2000"></textarea>
+              </div>
+
+              <!-- Hidden trap for spam robots (people never see or fill this) -->
+              <div class="hp-field" aria-hidden="true">
+                <label for="c-website">Leave this empty</label>
+                <input type="text" id="c-website" name="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+
+              <p class="form-note">Please don't include private health details in this message. We'll talk it through when we reply.</p>
+
+              <button type="submit" class="green-submit-btn" id="contact-submit">Send Message <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+              <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer footer-on-blue">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ----- Contact form (sends through Formspree without leaving the page) -----
+    var form = document.getElementById('contact-form');
+    var statusEl = document.getElementById('contact-status');
+    var btn = document.getElementById('contact-submit');
+    var btnHTML = btn.innerHTML;
+
+    function setStatus(msg, ok) {
+      statusEl.textContent = msg;
+      statusEl.className = 'form-status ' + (ok ? 'ok' : 'error');
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var name = form.name.value.trim(), email = form.email.value.trim(), message = form.message.value.trim();
+      if (!name || !email || !message) { setStatus('Please fill in your name, email and message.', false); return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setStatus('Please check your email address.', false); return; }
+      if (form._gotcha.value) { form.reset(); return; }               // a robot filled the hidden trap: quietly stop
+
+      if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
+        setStatus('The form isn’t connected yet. (Add your Formspree link to the form in this page.)', false); return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (r) {
+          if (!r.ok) throw new Error('bad response');
+          form.reset();
+          setStatus('Thank you! Your message has been sent. We’ll be in touch soon.', true);
+        })
+        .catch(function () {
+          setStatus('Sorry, that didn’t go through. Please call 519-955-3424 or email us directly.', false);
+        })
+        .then(function () {
+          btn.disabled = false;
+          btn.innerHTML = btnHTML;
+        });
+    });
+  </script>
+
+</body>
+</html>

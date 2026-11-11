@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Our Services - Community Connections Support Services</title>
+  <meta name="description" content="Home support, mentoring, companionship, community connections, respite support and personal care from Community Connections Support Services." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Our Services - Community Connections Support Services">
+  <meta property="og:description" content="Home support, mentoring, companionship, community connections, respite support and personal care from Community Connections Support Services.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= SERVICES HERO SECTION ================= -->
+    <section class="hero services-hero">
+      <div class="hero-content">
+        <h1 class="script-title">Our Services</h1>
+        <p class="hero-subtext">
+          Personalized support. Real-life solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES GRID SECTION ================= -->
+    <section class="services-grid-section">
+      <div class="container">
+
+        <h2 class="visually-hidden">What we offer</h2>
+
+        <div class="services-grid">
+
+          <!-- Service 1: Home Support -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-home.jpg" alt="Home Support" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+              </div>
+              <h3>Home Support</h3>
+              <p>Help with daily living, household tasks, meal prep, grocery pick-up, and home management.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-home" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 2: Mentoring -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-mentoring.jpg" alt="Mentoring" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-people-arrows" aria-hidden="true"></i>
+              </div>
+              <h3>Mentoring</h3>
+              <p>Guidance, encouragement and positive support to help you reach your goals.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-mentoring" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 3: Companionship -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-companionship.jpg" alt="Companionship" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              </div>
+              <h3>Companionship</h3>
+              <p>Meaningful connection and friendly support when you need it most.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-companionship" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 4: Community Connections -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-resources.jpg" alt="Community Connections" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+              </div>
+              <h3>Community Connections</h3>
+              <p>Connecting individuals with services, programs and opportunities in their community.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-resources" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 5: Respite Support -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-respite.jpg" alt="Respite Support" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              </div>
+              <h3>Respite Support</h3>
+              <p>A break for caregivers so you can recharge and feel supported.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-respite" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <!-- Service 6: Personal Care -->
+          <div class="service-card">
+            <div class="service-card-img">
+              <img src="service-customized.jpg" alt="Personal Care" loading="lazy">
+            </div>
+            <div class="service-card-body">
+              <div class="service-icon">
+                <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+              </div>
+              <h3>Personal Care</h3>
+              <p>Compassionate, individual care built around your unique health and everyday living needs.</p>
+              <a href="contact.html" class="service-btn" data-modal="modal-customized" aria-haspopup="dialog">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICE POP-UPS =================
+         To change the wording, edit the text inside the <p> of each pop-up below.
+         Add more paragraphs by copying a <p>...</p> line. -->
+
+    <!-- Pop-up: Home Support -->
+    <dialog class="service-modal" id="modal-home" aria-labelledby="modal-home-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-house" aria-hidden="true"></i></div>
+        <h3 id="modal-home-title">Home Support</h3>
+
+        <p>Navigating daily routines can sometimes feel overwhelming, but you don't have to do it alone. Our Home Support service provides practical, hands-on assistance designed to keep households running smoothly and comfortably. We help with essential day-to-day tasks, including household management, meal preparation, grocery pick-up, and general living support. Our goal is to foster a safe, clean, and independent living environment tailored to each individual's unique needs.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+    <!-- Pop-up: Mentoring -->
+    <dialog class="service-modal" id="modal-mentoring" aria-labelledby="modal-mentoring-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i></div>
+        <h3 id="modal-mentoring-title">Mentoring</h3>
+
+        <p>Reaching personal milestones takes guidance, encouragement, and a reliable support system. Our Mentoring program is designed to empower individuals by building confidence, developing life skills, and setting actionable goals. Whether working toward personal independence, educational targets, or community involvement, our positive guidance helps clients unlock their full potential and stay motivated along their journey.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+    <!-- Pop-up: Companionship -->
+    <dialog class="service-modal" id="modal-companionship" aria-labelledby="modal-companionship-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-heart" aria-hidden="true"></i></div>
+        <h3 id="modal-companionship-title">Companionship</h3>
+
+        <p>Human connection is at the heart of health and well-being. Our Companionship service offers friendly, consistent support and meaningful interaction for individuals who benefit from social engagement. From engaging conversations and shared hobbies to a comforting presence when it's needed most, we ensure clients feel valued, heard, and connected to the world around them.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+    <!-- Pop-up: Community Connections -->
+    <dialog class="service-modal" id="modal-resources" aria-labelledby="modal-resources-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></div>
+        <h3 id="modal-resources-title">Community Connections</h3>
+
+        <p>True independence often comes from knowing how to navigate your local community. Our Community Connections service bridges the gap by linking individuals with the local programs, resources, and opportunities available to them. We help clients actively participate in community life, discover new programs, and build networks that enrich their everyday experiences.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+    <!-- Pop-up: Respite Support -->
+    <dialog class="service-modal" id="modal-respite" aria-labelledby="modal-respite-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+        <h3 id="modal-respite-title">Respite Support</h3>
+
+        <p>Caregiving is a deeply rewarding role, but everyone needs a moment to pause, recharge, and care for themselves. Our Respite Support service provides reliable, compassionate temporary relief for primary caregivers. While we step in to offer dedicated, professional care and companionship to your loved one, you can take a well-deserved break knowing they are in safe hands.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+    <!-- Pop-up: Personal Care -->
+    <dialog class="service-modal" id="modal-customized" aria-labelledby="modal-customized-title">
+      <div class="service-modal-inner">
+        <button type="button" class="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></div>
+        <h3 id="modal-customized-title">Personal Care</h3>
+
+        <p>Maintaining personal dignity and hygiene is vital for comfort, health, and self-esteem. Our Personal Care service delivers respectful, sensitive assistance with daily living activities such as bathing, dressing, toileting, and grooming. Our trained support professionals approach every task with empathy, ensuring clients feel safe, respected, and well-cared for at all times.</p>
+
+        <a href="contact.html" class="service-btn">Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </dialog>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Service pop-ups: open from "Learn More", close with the X, by tapping outside, or with Escape
+    document.querySelectorAll('[data-modal]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        var dlg = document.getElementById(btn.getAttribute('data-modal'));
+        if (dlg && typeof dlg.showModal === 'function') {
+          e.preventDefault();
+          dlg.showModal();
+        }
+      });
+    });
+
+    document.querySelectorAll('.service-modal').forEach(function (dlg) {
+      dlg.querySelector('.modal-close').addEventListener('click', function () { dlg.close(); });
+      dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+    });
+  </script>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

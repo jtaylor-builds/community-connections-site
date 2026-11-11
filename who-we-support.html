@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Who We Support - Community Connections Support Services</title>
+  <meta name="description" content="Community Connections Support Services supports seniors, people with disabilities, those recovering from illness or injury, caregivers and families with person-centred care." />
+  <meta name="theme-color" content="#163459" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview.
+       TODO: make sure the og:image address below matches your real domain. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Who We Support - Community Connections Support Services">
+  <meta property="og:description" content="Community Connections Support Services supports seniors, people with disabilities, those recovering from illness or injury, caregivers and families with person-centred care.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet (all styling for this page lives in here) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html" class="active" aria-current="page">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER =================
+         Photo file: who-we-support-hero.jpg (same folder as this page) -->
+    <section class="hero support-hero">
+      <div class="hero-content">
+        <h1 class="script-title">Who We Support</h1>
+        <p class="hero-subtext">Everyone is welcome here.</p>
+      </div>
+    </section>
+
+    <!-- ================= MAIN BODY ================= -->
+    <section class="support-main-section">
+      <div class="support-container">
+
+        <p class="support-intro-text">
+          We support individuals and families of all ages and abilities, including:
+        </p>
+
+        <!-- 2-column checklist (to add another item, copy one whole "support-item" block below) -->
+        <div class="support-list-grid">
+          <div class="support-item">
+            <span class="check-circle"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <span class="support-item-text">Seniors</span>
+          </div>
+          <div class="support-item">
+            <span class="check-circle"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <span class="support-item-text">Those recovering from illness or injury</span>
+          </div>
+          <div class="support-item">
+            <span class="check-circle"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <span class="support-item-text">Individuals with disabilities</span>
+          </div>
+          <div class="support-item">
+            <span class="check-circle"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <span class="support-item-text">People experiencing isolation or life transitions</span>
+          </div>
+          <div class="support-item">
+            <span class="check-circle"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
+            <span class="support-item-text">Caregivers and families</span>
+          </div>
+        </div>
+
+        <!-- Our Approach card -->
+        <div class="approach-card">
+          <div class="approach-icon-box">
+            <i class="fa-solid fa-people-roof" aria-hidden="true"></i>
+          </div>
+          <div class="approach-content">
+            <h2 class="approach-title">Our Approach</h2>
+            <p>
+              We believe in <strong>person-centred support</strong> &mdash; respecting your choices, encouraging independence, and building meaningful connections within your community.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <!-- TODO: replace with your actual Facebook page address -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
