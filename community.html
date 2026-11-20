@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Our Community - Community Connections Support Services</title>
+  <meta name="description" content="See moments from the outings, events and everyday connections Community Connections Support Services shares with people in Goderich and the surrounding area." />
+  <meta name="theme-color" content="#163459" /><meta name="robots" content="noindex" />
+
+  <!-- Browser tab icon, home-screen icon and link-sharing preview. -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Community Connections Support Services">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="Our Community - Community Connections Support Services">
+  <meta property="og:description" content="Moments from the outings, events and everyday connections we share with people in Goderich and the surrounding area.">
+  <meta property="og:image" content="https://www.communityconnectionssupportservices.ca/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts (only the weights the site actually uses) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet (all styling for this page lives in here, section 16) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Hamburger menu behaviour (shared by every page) -->
+  <script src="nav.js"></script>
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo on left -->
+      <div class="logo">
+        <a href="index.html" aria-label="Community Connections Support Services - Home">
+          <img src="logo.png" alt="Community Connections Support Services" />
+        </a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="tel:5199553424" class="header-phone" aria-label="Call us at 519-955-3424">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i><span class="phone-text"> 519-955-3424</span>
+        </a>
+
+        <!-- Hamburger button (only visible on phones and tablets) -->
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation Links (becomes the hamburger dropdown on phones and tablets) -->
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="who-we-support.html">Who We Support</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="community.html" class="active" aria-current="page">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER =================
+         Optional photo: community-hero.jpg (same folder as this page).
+         Phone version: community-hero-mobile.jpg. Without them the banner is
+         plain navy with a soft green glow, like the About page. -->
+    <section class="hero community-hero">
+      <div class="hero-content">
+        <h1 class="script-title">Out in the Community</h1>
+        <p class="hero-subtext">Moments from our outings, events and everyday connections around Goderich.</p>
+      </div>
+    </section>
+
+    <!-- ================= PHOTO GALLERY ================= -->
+    <section class="community-section">
+      <div class="container">
+
+        <div class="section-title-wrapper">
+          <span class="title-line"></span>
+          <h2 class="section-title">COMMUNITY MOMENTS</h2>
+          <span class="title-line"></span>
+        </div>
+
+        <p class="community-intro">Good support helps people stay connected to the people and places that matter to them. This page shares a few moments from our outings, events and time in the community.</p>
+
+        <!-- Photos go inside this grid. While it holds no photos, the "coming soon" box
+             below shows instead. Once the first photo is added the box hides itself. -->
+        <div class="community-grid">
+
+          <!--
+            HOW TO ADD A PHOTO
+            Copy the figure block at the bottom of this comment and paste it BELOW the comment,
+            still inside this grid. Fill in the file name, alt text and caption.
+            Add one block per photo, newest first. Photos go in the "community" folder.
+
+            BEFORE ADDING A PHOTO, CONFIRM ALL OF THESE:
+              1. A signed Annex A photo consent is on file, and it names this page (community.html).
+              2. The client (or the person with authority) saw this exact photo and caption.
+              3. The caption has no surname, diagnosis, home address or live location.
+              4. The photo was not taken during personal care or other private activities.
+              5. Location data (EXIF) is removed and the file is resized to about 900 px wide.
+              6. The photo and the date are written in the consent log.
+
+            <figure class="community-photo">
+              <img src="community/community-01.jpg" width="900" height="675" loading="lazy" decoding="async"
+                   alt="Describe the photo for someone who cannot see it. No names.">
+              <figcaption>A short, warm caption.</figcaption>
+            </figure>
+          -->
+
+        </div>
+
+        <div class="community-empty">
+          <p><strong>Photos are coming soon.</strong><br>
+          Check back to see moments from our outings and community events.</p>
+        </div>
+
+        <p class="community-note">We share a photo only with the written permission of everyone in it. If you would like one taken down, please <a href="contact.html">contact us</a> and we will remove it. You can also find more on our <a href="https://www.facebook.com/profile.php?id=61594371117139" target="_blank" rel="noopener noreferrer">Facebook page<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wave-shape" aria-hidden="true"></div>
+
+    <div class="footer-content-row">
+      <!-- Center Cursive Tagline -->
+      <div class="footer-center-tagline">
+        <p>Because Everyone Deserves to Feel Connected.</p>
+      </div>
+
+      <!-- Right Side: Green Social/Contact Icons -->
+      <div class="footer-right-social">
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/profile.php?id=61594371117139" target="_blank" rel="noopener noreferrer" class="footer-icon-btn" aria-label="Facebook (opens in a new tab)">
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:communityconnections.on@gmail.com" class="footer-icon-btn" aria-label="Email us">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Small Copyright at Bottom -->
+    <p class="copyright-text">&copy; <span id="year">2026</span> Community Connections Support Services</p>
+  </footer>
+
+  <!-- Floating call button (phones only - see style.css) -->
+  <a href="tel:5199553424" class="call-fab" aria-label="Call us at 519-955-3424">
+    <i class="fa-solid fa-phone" aria-hidden="true"></i> Call us
+  </a>
+
+  <script>
+    // Keeps the copyright year current automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -2108,3 +2108,158 @@ body {
   border: 1px solid #b9dccb;
   box-shadow: 0 4px 15px rgba(22, 52, 89, 0.08);
 }
+
+
+
+/* ================= 16. COMMUNITY PAGE =================
+   PASTE THIS AT THE VERY BOTTOM of style.css (after everything else).
+   It has to come last so it wins over the shared banner rules above. */
+
+/* Banner: same look as the other inner pages. Until community-hero.jpg exists,
+   a soft green glow fills the right side (same idea as the About page). */
+.community-hero {
+  --hero-img: url('community-hero.jpg');
+  --hero-grad: var(--hero-fade);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  padding: 60px 8% calc(60px + var(--wave-h));
+  color: #ffffff;
+  background:
+    var(--hero-grad),
+    var(--hero-img) center right / cover no-repeat,
+    radial-gradient(circle at 80% 50%, rgba(54, 116, 62, 0.38), rgba(54, 116, 62, 0) 42%) #163459;
+}
+
+.community-hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.community-hero .script-title {
+  font-size: clamp(2.6rem, 5.5vw, 3.8rem);
+  color: #ffffff;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.community-hero .hero-subtext {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.community-hero :is(.script-title, .hero-subtext) {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+/* Gallery section */
+.community-section {
+  padding: 60px 20px 80px;
+  background-color: var(--page-bg);
+}
+
+.community-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.community-intro {
+  max-width: 720px;
+  margin: 0 auto 36px;
+  text-align: center;
+  color: var(--navy);
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Cards stay a nice size and centre themselves, even with only one or two photos */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 340px));
+  justify-content: center;
+  gap: 24px;
+}
+
+.community-photo {
+  margin: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Every photo is cropped to the same 4:3 shape so the grid stays tidy.
+   The soft colour shows while a photo loads. */
+.community-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center 30%;   /* keeps heads and faces in view (0% = top of photo, 50% = middle) */
+  background: linear-gradient(135deg, #d7ebe3, #c5dbe9);
+}
+
+.community-photo figcaption {
+  padding: 14px 16px 16px;
+  color: #555555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* "Photos coming soon" box. It hides itself as soon as the grid holds a photo. */
+.community-empty {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px dashed #b8c7d1;
+  border-radius: 14px;
+  padding: 36px 24px;
+  text-align: center;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.community-grid:has(.community-photo) + .community-empty {
+  display: none;
+}
+
+.community-note {
+  max-width: 640px;
+  margin: 36px auto 0;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.community-note a {
+  color: var(--green-dark);
+  font-weight: 600;
+}
+
+/* Phones: shorter banner, tighter spacing, smaller phone-size banner photo */
+@media (max-width: 700px) {
+  .community-hero {
+    --hero-img: url('community-hero-mobile.jpg');
+    min-height: 0;
+    padding: 34px 20px calc(28px + var(--wave-h));
+  }
+
+  .community-section {
+    padding: 36px 16px 48px;
+  }
+
+  .community-grid {
+    gap: 18px;
+  }
+}
